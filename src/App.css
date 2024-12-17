@@ -1,0 +1,176 @@
+/* Réinitialisation et styles de base */
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body, html {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color:  #121212;
+  ;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* En-tête */
+.App-header {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.App-header h1 {
+  color: #b52828; /* Bleu Google Maps */
+}
+
+/* Contrôles et filtres */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filters, .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #b52828;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b52828;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters, .search-bar {
+    width: 100%;
+    
+  }
+
+  input, select, button {
+    width: 100%;
+  }
+
+  .toggle-dark-mode{
+    width: 30%;
+  }
+  
+  .search-bar input{
+    margin: 20px;
+  }
+}
+
+/* Favoris */
+.favorites-dashboard {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.favorites-dashboard ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites-dashboard li {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.favorites-dashboard button {
+  margin-left: 10px;
+}
+
+/* Autres styles si nécessaire */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .App-header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode button {
+  background-color: #333;
+  color: #b52828;
+}
+
+.dark-mode button:hover {
+  background-color: #444;
+}
+/* Style pour le bouton de basculement du mode sombre */
+.toggle-dark-mode {
+  position: absolute;
+  top: 20px;
+  right: 136px;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  border-radius: 4px;
+  border: none;
+  background-color: #b52828;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dark-mode .root{
+  background-color: #1e1e1e;
+}
+
+.toggle-dark-mode:hover {
+  background-color: #b52828;
+}
+
+/* Styles pour le mode sombre du bouton */
+.dark-mode .toggle-dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode .toggle-dark-mode:hover {
+  background-color: #444;
+  color: #b52828;
+}
+
+.dark-mode input{
+  background-color: #b4b4b4;
+  color: #fff;
+}
+
+.dark-mode select{
+  background-color: #b4b4b4;
+  color: #fff;
+}
+
+.dark-mode .favorites-dashboard{
+  background-color:#1e1e1e;
+}
+
